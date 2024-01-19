@@ -5,7 +5,7 @@ using System.Text;
 
 namespace librus
 {
-    class Score
+    public class Score
     {
         [PrimaryKey, AutoIncrement]
 

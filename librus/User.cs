@@ -5,7 +5,7 @@ using System.Text;
 
 namespace librus
 {
-    class User
+    public class User
     {
         [PrimaryKey,AutoIncrement]
         public int User_id { get; set; }
