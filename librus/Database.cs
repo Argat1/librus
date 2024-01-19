@@ -12,7 +12,7 @@ namespace librus
         public Database(string dbpath)
         {
             _database = new SQLiteConnection(dbpath);
-            _database.CreateTableAsync<Users>();
+            _database.CreateTable<User>();
         }
 
 

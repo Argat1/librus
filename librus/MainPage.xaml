@@ -4,11 +4,11 @@
              x:Class="librus.MainPage" NavigationPage.HasNavigationBar="False">
 
     <StackLayout BackgroundColor="Black">
-        <Label Text="Login" TextColor="White" Padding="10" HorizontalOptions="CenterAndExpand"></Label>
+        <Label Text="Login" TextColor="White" Padding="10" FontSize="25" HorizontalOptions="CenterAndExpand"></Label>
         <Entry TextColor="White" Margin="10" x:Name="login" ></Entry>
-        <Label Text="Haslo:" TextColor="White" Padding="10" HorizontalOptions="CenterAndExpand" ></Label>
+        <Label Text="Haslo:" TextColor="White" Padding="10" FontSize="25" HorizontalOptions="CenterAndExpand" ></Label>
         <Entry TextColor="white" Margin="10" IsPassword="True" x:Name="haslo"></Entry>
-        <Button Text="Zaloguj" BackgroundColor="Aqua" Padding="10" Margin="10" Clicked="Button_Clicked"></Button>
+        <Button Text="Zaloguj" BackgroundColor="CadetBlue" Padding="10" Margin="10" Clicked="Button_Clicked"></Button>
     </StackLayout>
 
 </ContentPage>
