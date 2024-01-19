@@ -15,9 +15,17 @@ namespace librus
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new TabbedPage());
+            var users = await App.Database.GetUserFilter(login.Text, haslo.Text);
+            if (login.Text.Length != 7 || users.Count == 0)
+            {
+                DisplayAlert("Blad", "Podano nieprawidlowe dane", "OK");
+                return;
+            }
+
+            var user = users.ElementAt(0);
+            Navigation.PushAsync(new TabbedPage(user));
         }
     }
 }
