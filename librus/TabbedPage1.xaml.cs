@@ -12,7 +12,7 @@ namespace librus
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabbedPage1 : TabbedPage
     {
-        public TabbedPage1 ()
+        public TabbedPage1 (User user)
         {
             InitializeComponent();
         }

@@ -25,7 +25,7 @@ namespace librus
             }
 
             var user = users.ElementAt(0);
-            Navigation.PushAsync(new TabbedPage(user));
+            Navigation.PushAsync(new TabbedPage1(user));
         }
     }
 }
