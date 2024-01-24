@@ -16,7 +16,7 @@ namespace librus
         public string Subject_name { get; set;}
         public string Value { get; set; }
         public  DateTime Date { get; set; }
-        public string Descripton { get; set; }
+        public string Description { get; set; }
         public string Period { get; set; }
 
         

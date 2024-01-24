@@ -7,8 +7,10 @@ namespace librus
 {
     public class Subject
     {
-        [PrimaryKey, AutoIncrement]
-        public int Subject_id { get; set; }
-        public string Subject_name { get; set; }
+        
+            [PrimaryKey, AutoIncrement]
+            public int Subject_id { get; set; }
+            public string Name { get; set; }
+        
     }
 }

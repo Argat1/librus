@@ -17,7 +17,9 @@ namespace librus
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            /*var users = await App.Database.GetUserFilter(login.Text, haslo.Text);
+
+            
+            var users = await App.Database.GetUserFilter(login.Text, haslo.Text);
             if (login.Text.Length != 7 || users.Count == 0)
             {
                 DisplayAlert("Blad", "Podano nieprawidlowe dane", "OK");
@@ -25,8 +27,8 @@ namespace librus
             }
 
             var user = users.ElementAt(0);
-            Navigation.PushAsync(new TabbedPage1(user));*/
-            Navigation.PushAsync(new TabbedPage1());
+            Navigation.PushAsync(new TabbedPage1(user));
+
         }
     }
 }

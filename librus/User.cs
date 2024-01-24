@@ -9,7 +9,7 @@ namespace librus
     {
         [PrimaryKey,AutoIncrement]
         public int User_id { get; set; }
-        public int Name { get; set; }
+        public string Name { get; set; }
         public string Username{ get; set; }
         public string Password { get; set; }
         public string Login {  get; set; }

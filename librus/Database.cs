@@ -39,7 +39,7 @@ namespace librus
             return _database.QueryAsync<Subject>("SELECT * FROM subject");
         }
 
-        public Task<List<Score>> GetScores()
+        public Task<List<Score>> GetScories()
         {
             return _database.QueryAsync<Score>("SELECT * FROM Score");
         }
@@ -49,9 +49,14 @@ namespace librus
             return _database.InsertAsync(subject);
         }
 
-        public Task<int> InsertSubject(Score score)
+        public Task<int> InsertScore(Score score)
         {
             return _database.InsertAsync(score);
+        }
+
+        public Task<List<Score>> GetScories(int user_id, int subject_id, string period)
+        {
+            return _database.QueryAsync<Score>("SELECT * FROM Score WHERE User_id=? AND Subject_id=? AND Period=?", user_id, subject_id, period);
         }
 
 
