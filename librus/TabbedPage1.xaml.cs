@@ -72,7 +72,7 @@ namespace librus
             Score s = new Score()
             {
                 User_id = user.User_id,
-                Subject_id = 1,
+                //Subject_id = 1,
                 Subject_name = P_Subject_name.SelectedItem.ToString(),
                 Value = P_Value.SelectedItem.ToString(),
                 Date = DateTime.Now,
